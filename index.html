@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script projecct-1</title>
+</head>
+<body>
+    <style>
+        body{
+            display:flex;
+            align-items:center; 
+            justify-content:center;
+            margin-top:100px;
+        }
+        button{
+            margin-top:50px;
+            margin-right:50px;
+            margin-left:50px;
+            cursor: pointer;
+        }
+        #on{
+            height:30px;
+            border: 1px solid black;
+            border-radius:10px;
+            background-color: yellow;
+            font-weight: bolder;
+            font-size: medium;
+        }
+        #off{
+            height:30px;
+            border:1px solid black;
+            border-radius: 10px;
+            background-color: black;
+            color: aliceblue;
+            font-weight: bolder;
+            font-size: medium;
+        }
+    </style>
+    <script>
+         var imgSrc=document.getElementById('Img')
+        function ON(){
+             Img.src='pic_bulbon.gif';
+        }
+        function OFF(){
+            Img.src='pic_bulboff.gif';
+        }
+    </script>
+    <button  id="on" onclick="ON();">Turn on the light</button>
+    <img src="pic_bulboff.gif" alt="" id="Img">
+    <button id="off"  onclick="OFF();">Turn of the light</button>
+</body>
+</html>
